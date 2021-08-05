@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
-export default function Card({ img, title, price, stock }) {
+export default function Card({ product }) {
   return (
     <CardStyled>
       <div className="head">
-        {stock > 0 ? (
+        {product.stock > 0 ? (
           <p className="off">"OUT OF STOCK!"</p>
         ) : (
           <p className="on">"IN STOCK"</p>
         )}
-        <img src={img} alt={title} />
+        <img src={product.img} alt={product.title} />
       </div>
       <div className="body">
         <div className="container">
-          <h2>{title}</h2> <span>{price}$</span>
+          <h2>{product.title}</h2> <span>{product.price}$</span>
         </div>
         <button>see more details</button>
       </div>
@@ -31,6 +31,9 @@ const CardStyled = styled.div`
   background-color: var(--white-color);
   border: 2px solid var(--dark-color);
   .head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     max-width: 260px;
     width: 100%;
@@ -41,8 +44,8 @@ const CardStyled = styled.div`
     }
     img {
       margin: 0 auto;
-      max-width: 260px;
-      width: 100%;
+      max-width: 230px;
+      max-height: 170px;
     }
     .off {
       color: var(--danger-color);

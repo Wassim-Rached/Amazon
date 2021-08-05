@@ -1,111 +1,110 @@
-const Products = [
+export default [
     {
-        "id":"1",
-        "title":"pants1",
+        "_id":"1",
+        "title":"shoes",
         "desc":"this pants is realy nice and good OMG!",
         "price":399,
         "stock":25,
         "category":"pants",
-        "img":"./img/product.jpg"
+        "img":"./images/product1.jpg"
     },
     {
-        "id":"2",
+        "_id":"2",
         "title":"pants2",
         "desc":"this pants is realy nice and good OMG!",
         "price":129,
         "stock":0,
         "category":"pants",
-        "img":"./img/product.jpg"
+        "img":"./images/product2.jpeg"
     },
     {
-        "id":"3",
+        "_id":"3",
         "title":"pants",
         "desc":"this pants is realy nice and good OMG!",
         "price":199,
         "stock":4,
         "category":"pants",
-        "img":"./img/product.jpg"
+        "img":"./images/product3.jpg"
     },
     {
-        "id":"4",
+        "_id":"4",
         "title":"watch2",
         "desc":"this watch is realy nice and good OMG!",
         "price":69,
         "stock":0,
         "category":"watch",
-        "img":"./img/product.jpg"
+        "img":"./images/product5.jpg"
     },
     {
-        "id":"5",
+        "_id":"5",
         "title":"pants3",
         "desc":"this watch is realy nice and good OMG!",
         "price":12,
         "stock":1,
         "category":"watch",
-        "img":"./img/product.jpg"
+        "img":"./images/product2.png"
     },
     {
-        "id":"6",
+        "_id":"6",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     },
     {
-        "id":"6",
+        "_id":"7",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     },
     {
-        "id":"6",
+        "_id":"8",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     },
     {
-        "id":"6",
+        "_id":"9",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     },
     {
-        "id":"6",
+        "_id":"10",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     },
     {
-        "id":"6",
+        "_id":"11",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     },
     {
-        "id":"6",
+        "_id":"12",
         "title":"car1",
         "desc":"this car is realy nice and good OMG!",
         "price":1899,
         "stock":1,
         "category":"car",
-        "img":"./img/product.jpg"
+        "img":"./images/product.jpg"
     }
 ]
-export default Products

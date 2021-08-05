@@ -1,26 +1,25 @@
-import styled from 'styled-components'
+// import styled from 'styled-components'
+import { StyledPageContainer } from './styles/layouts';
+//components
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar';
-import HomePage from './pages/HomePage';
-import { StyledPageContainer } from './styles/layouts';
+//screens
+import SearchProductPage from './screens/SearchProductScreen';
+import HomeScreen from './screens/HomeScreen'
 
 function App() {
   return (
-    <AppStyled>
+    <div>
       <Navbar/>
       <StyledPageContainer>
-      <Sidebar/>
-      <HomePage/>
+       <Sidebar/>
+      <SearchProductPage/> 
+      {/* <HomeScreen/> */}
       </StyledPageContainer>
       <Footer/>
-    </AppStyled>
+    </div>
   );
 }
-const AppStyled = styled.main`
-.activeSideBar{
-  transform: translateX(var(--sidebar-width));
-}
-`
 
 export default App;

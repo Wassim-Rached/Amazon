@@ -66,22 +66,24 @@ export default function Sidebar() {
 
 const SidebarStyled = styled.div`
   z-index: 99;
-  padding-bottom: var(--footer-height);
+  min-width: var(--sidebar-width);
   max-width: var(--sidebar-width);
-  width: 100%;
+  width: var(--sidebar-width);
   display: flex;
-  position: absolute;
+  position: sticky;
   top: var(--nav-height);
   left: 0;
   bottom: var(--footer-height);
   padding-left: 2rem;
   justify-content: space-evenly;
   flex-direction: column;
-  height: calc(100vh - (var(--nav-height) + var(--footer-height)));
-  background-color: var(--secondary-color);
-  border-right: 2px solid var(--dark-font-color);
-  transition: all 0.3s ease-in;
+  height: calc(100vh - var(--nav-height));
+  border-right: 1px solid var(--dark-font-color);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white-color);
   @media only screen and (max-width: 800px) {
+    position: fixed;
+    transform: translateX(calc(0px - var(--sidebar-width)));
     .sidebarClicker {
       cursor: pointer;
       position: absolute;
@@ -91,8 +93,8 @@ const SidebarStyled = styled.div`
       width: 40px;
       border-radius: 50%;
       background-color: var(--secondary-color);
+      z-index: 100;
     }
-    left: calc(0px - var(--sidebar-width));
   }
   div {
     p {

@@ -9,7 +9,7 @@ const GloblaStyles = createGlobalStyle`
     --dark-font-color:#3d3814;
     --light-font-color:#fff;
     --dark-bg-color:#333;
-    --danger-color:#ce1f1f;
+    --danger-color:#c82c2c;
     --success-color:#0b7b4c;
     //px    
     --sidebar-width:300px;
@@ -17,9 +17,10 @@ const GloblaStyles = createGlobalStyle`
     --max-width:998px;
     --least-width:320px;
     --nav-height:70px;
-    --footer-height:40px;
+    --footer-height:50px;
 }
 body{
+    
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
@@ -38,6 +39,10 @@ a{
     font-size: inherit;
 }li{
     list-style: none;
+}
+//custom styles
+.activeSideBar{
+  transform: translateX(0);
 }
 `;
 

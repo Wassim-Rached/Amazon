@@ -46,6 +46,9 @@ const NavbarStyled = styled.nav`
   color: var(--white-color);
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
   .left {
     span {
       text-transform: capitalize;
@@ -70,7 +73,7 @@ const NavbarStyled = styled.nav`
     display: flex;
     align-items: center;
     height: 35px;
-    max-width: 200px;
+    max-width: 400px;
     width: 100%;
     margin: 0 5px;
     border-radius: 10px;
@@ -126,16 +129,15 @@ const NavbarStyled = styled.nav`
       }
       ul.active {
         z-index: 100;
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
         background-color: var(--dark-bg-color);
-        width: 100vw;
         top: var(--nav-height);
         right: 0;
         left: 0;
-        bottom: var(--footer-height);
+        bottom: 0;
       }
       .humberger {
         display: flex;

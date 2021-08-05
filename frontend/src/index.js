@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import GloblaStyles from './styles/GlobalStyles'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import GloblaStyles from "./styles/GlobalStyles";
+import { Provider } from "react-redux";
+import store from './Store'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <GloblaStyles/>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <React.StrictMode>
+      <GloblaStyles />
+      <App />
+    </React.StrictMode>
+  </Provider>,
+  document.getElementById("root")
 );
